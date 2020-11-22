@@ -16,5 +16,10 @@ namespace AppTaller
         {
             InitializeComponent();
         }
+
+        private void TxtBxDNI_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
