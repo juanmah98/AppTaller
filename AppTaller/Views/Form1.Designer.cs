@@ -29,18 +29,9 @@ namespace AppTaller
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("Alineacion y balanceo (A y B)");
-            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem("Service Completo");
-            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem("");
-            System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem("");
-            System.Windows.Forms.ListViewItem listViewItem5 = new System.Windows.Forms.ListViewItem("");
-            System.Windows.Forms.ListViewItem listViewItem6 = new System.Windows.Forms.ListViewItem("");
-            System.Windows.Forms.ListViewItem listViewItem7 = new System.Windows.Forms.ListViewItem("");
             this.button1 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.GrpBxDuenio = new System.Windows.Forms.GroupBox();
             this.LblDirec = new System.Windows.Forms.Label();
-            this.TxtBxDIrec = new System.Windows.Forms.TextBox();
             this.TxtBxCelular = new System.Windows.Forms.TextBox();
             this.LblCelular = new System.Windows.Forms.Label();
             this.TxtBxDNI = new System.Windows.Forms.TextBox();
@@ -49,25 +40,24 @@ namespace AppTaller
             this.LblApellido = new System.Windows.Forms.Label();
             this.LblName = new System.Windows.Forms.Label();
             this.TxtBxName = new System.Windows.Forms.TextBox();
-            this.GrpBxVehic = new System.Windows.Forms.GroupBox();
-            this.TxtBxPatente = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.LblProblema = new System.Windows.Forms.Label();
-            this.LblModelo = new System.Windows.Forms.Label();
-            this.LblMarca = new System.Windows.Forms.Label();
-            this.LblPatente = new System.Windows.Forms.Label();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.GrpBxPrecios = new System.Windows.Forms.GroupBox();
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.BtnAdd = new System.Windows.Forms.Button();
-            this.BtnRemove = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.nUEVOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bUSQUEDAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.GrpBxDuenio.SuspendLayout();
-            this.GrpBxVehic.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
-            this.GrpBxPrecios.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
@@ -79,18 +69,9 @@ namespace AppTaller
             this.button1.Text = "Siguiente";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(244, 50);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
             // GrpBxDuenio
             // 
             this.GrpBxDuenio.Controls.Add(this.LblDirec);
-            this.GrpBxDuenio.Controls.Add(this.TxtBxDIrec);
             this.GrpBxDuenio.Controls.Add(this.TxtBxCelular);
             this.GrpBxDuenio.Controls.Add(this.LblCelular);
             this.GrpBxDuenio.Controls.Add(this.TxtBxDNI);
@@ -99,28 +80,21 @@ namespace AppTaller
             this.GrpBxDuenio.Controls.Add(this.LblApellido);
             this.GrpBxDuenio.Controls.Add(this.LblName);
             this.GrpBxDuenio.Controls.Add(this.TxtBxName);
-            this.GrpBxDuenio.Location = new System.Drawing.Point(3, 3);
+            this.GrpBxDuenio.Location = new System.Drawing.Point(12, 98);
             this.GrpBxDuenio.Name = "GrpBxDuenio";
-            this.GrpBxDuenio.Size = new System.Drawing.Size(316, 213);
+            this.GrpBxDuenio.Size = new System.Drawing.Size(316, 234);
             this.GrpBxDuenio.TabIndex = 2;
             this.GrpBxDuenio.TabStop = false;
-            this.GrpBxDuenio.Text = "Datos del Dueño";
+            this.GrpBxDuenio.Text = "Nuevo";
             // 
             // LblDirec
             // 
             this.LblDirec.AutoSize = true;
             this.LblDirec.Location = new System.Drawing.Point(6, 183);
             this.LblDirec.Name = "LblDirec";
-            this.LblDirec.Size = new System.Drawing.Size(55, 13);
+            this.LblDirec.Size = new System.Drawing.Size(40, 13);
             this.LblDirec.TabIndex = 8;
-            this.LblDirec.Text = "Direccion:";
-            // 
-            // TxtBxDIrec
-            // 
-            this.TxtBxDIrec.Location = new System.Drawing.Point(67, 179);
-            this.TxtBxDIrec.Name = "TxtBxDIrec";
-            this.TxtBxDIrec.Size = new System.Drawing.Size(241, 20);
-            this.TxtBxDIrec.TabIndex = 7;
+            this.LblDirec.Text = "Fecha:";
             // 
             // TxtBxCelular
             // 
@@ -140,9 +114,9 @@ namespace AppTaller
             this.LblCelular.AutoSize = true;
             this.LblCelular.Location = new System.Drawing.Point(6, 144);
             this.LblCelular.Name = "LblCelular";
-            this.LblCelular.Size = new System.Drawing.Size(45, 13);
+            this.LblCelular.Size = new System.Drawing.Size(50, 13);
             this.LblCelular.TabIndex = 6;
-            this.LblCelular.Text = "Celular: ";
+            this.LblCelular.Text = "Patente: ";
             this.LblCelular.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // TxtBxDNI
@@ -158,9 +132,9 @@ namespace AppTaller
             this.LblDNI.AutoSize = true;
             this.LblDNI.Location = new System.Drawing.Point(6, 111);
             this.LblDNI.Name = "LblDNI";
-            this.LblDNI.Size = new System.Drawing.Size(32, 13);
+            this.LblDNI.Size = new System.Drawing.Size(54, 13);
             this.LblDNI.TabIndex = 4;
-            this.LblDNI.Text = "DNI: ";
+            this.LblDNI.Text = "Vehiluco: ";
             this.LblDNI.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // TxtBxApellido
@@ -175,9 +149,9 @@ namespace AppTaller
             this.LblApellido.AutoSize = true;
             this.LblApellido.Location = new System.Drawing.Point(6, 74);
             this.LblApellido.Name = "LblApellido";
-            this.LblApellido.Size = new System.Drawing.Size(50, 13);
+            this.LblApellido.Size = new System.Drawing.Size(45, 13);
             this.LblApellido.TabIndex = 2;
-            this.LblApellido.Text = "Apellido: ";
+            this.LblApellido.Text = "Celular: ";
             this.LblApellido.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // LblName
@@ -185,10 +159,11 @@ namespace AppTaller
             this.LblName.AutoSize = true;
             this.LblName.Location = new System.Drawing.Point(6, 40);
             this.LblName.Name = "LblName";
-            this.LblName.Size = new System.Drawing.Size(50, 13);
+            this.LblName.Size = new System.Drawing.Size(45, 13);
             this.LblName.TabIndex = 1;
-            this.LblName.Text = "Nombre: ";
+            this.LblName.Text = "Cliente: ";
             this.LblName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LblName.Click += new System.EventHandler(this.LblName_Click);
             // 
             // TxtBxName
             // 
@@ -198,154 +173,153 @@ namespace AppTaller
             this.TxtBxName.TabIndex = 0;
             this.TxtBxName.Tag = "";
             // 
-            // GrpBxVehic
+            // groupBox1
             // 
-            this.GrpBxVehic.Controls.Add(this.TxtBxPatente);
-            this.GrpBxVehic.Controls.Add(this.textBox3);
-            this.GrpBxVehic.Controls.Add(this.textBox2);
-            this.GrpBxVehic.Controls.Add(this.textBox1);
-            this.GrpBxVehic.Controls.Add(this.LblProblema);
-            this.GrpBxVehic.Controls.Add(this.LblModelo);
-            this.GrpBxVehic.Controls.Add(this.LblMarca);
-            this.GrpBxVehic.Controls.Add(this.LblPatente);
-            this.GrpBxVehic.Location = new System.Drawing.Point(3, 235);
-            this.GrpBxVehic.Name = "GrpBxVehic";
-            this.GrpBxVehic.Size = new System.Drawing.Size(316, 226);
-            this.GrpBxVehic.TabIndex = 3;
-            this.GrpBxVehic.TabStop = false;
-            this.GrpBxVehic.Text = "Datos del Vehiculo";
+            this.groupBox1.Controls.Add(this.textBox5);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.textBox3);
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Controls.Add(this.textBox4);
+            this.groupBox1.Location = new System.Drawing.Point(366, 98);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(388, 234);
+            this.groupBox1.TabIndex = 4;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Trabajo";
             // 
-            // TxtBxPatente
+            // label1
             // 
-            this.TxtBxPatente.Location = new System.Drawing.Point(67, 27);
-            this.TxtBxPatente.Name = "TxtBxPatente";
-            this.TxtBxPatente.Size = new System.Drawing.Size(241, 20);
-            this.TxtBxPatente.TabIndex = 9;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(67, 137);
-            this.textBox3.MinimumSize = new System.Drawing.Size(222, 80);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(241, 80);
-            this.textBox3.TabIndex = 7;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(67, 99);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(241, 20);
-            this.textBox2.TabIndex = 6;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(6, 183);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(54, 13);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Empleado";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(67, 62);
+            this.textBox1.AutoCompleteCustomSource.AddRange(new string[] {
+            "264-",
+            "155-",
+            "154-"});
+            this.textBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.textBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.textBox1.Location = new System.Drawing.Point(88, 140);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(241, 20);
-            this.textBox1.TabIndex = 5;
+            this.textBox1.TabIndex = 3;
             // 
-            // LblProblema
+            // label2
             // 
-            this.LblProblema.AutoSize = true;
-            this.LblProblema.Location = new System.Drawing.Point(6, 137);
-            this.LblProblema.Name = "LblProblema";
-            this.LblProblema.Size = new System.Drawing.Size(57, 13);
-            this.LblProblema.TabIndex = 3;
-            this.LblProblema.Text = "Problema: ";
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(6, 144);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(76, 13);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Mano de obra ";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // LblModelo
+            // textBox2
             // 
-            this.LblModelo.AutoSize = true;
-            this.LblModelo.Location = new System.Drawing.Point(6, 99);
-            this.LblModelo.Name = "LblModelo";
-            this.LblModelo.Size = new System.Drawing.Size(48, 13);
-            this.LblModelo.TabIndex = 2;
-            this.LblModelo.Text = "Modelo: ";
-            this.LblModelo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.textBox2.Location = new System.Drawing.Point(93, 104);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(241, 20);
+            this.textBox2.TabIndex = 2;
             // 
-            // LblMarca
+            // label3
             // 
-            this.LblMarca.AutoSize = true;
-            this.LblMarca.Location = new System.Drawing.Point(6, 62);
-            this.LblMarca.Name = "LblMarca";
-            this.LblMarca.Size = new System.Drawing.Size(43, 13);
-            this.LblMarca.TabIndex = 1;
-            this.LblMarca.Text = "Marca: ";
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(6, 111);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(91, 13);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Total Repuestos: ";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // LblPatente
+            // textBox3
             // 
-            this.LblPatente.AutoSize = true;
-            this.LblPatente.Location = new System.Drawing.Point(6, 27);
-            this.LblPatente.Name = "LblPatente";
-            this.LblPatente.Size = new System.Drawing.Size(47, 13);
-            this.LblPatente.TabIndex = 0;
-            this.LblPatente.Text = "Patente:";
-            this.LblPatente.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.textBox3.Location = new System.Drawing.Point(70, 70);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(241, 20);
+            this.textBox3.TabIndex = 1;
             // 
-            // tableLayoutPanel1
+            // label4
             // 
-            this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 45.35809F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 54.64191F));
-            this.tableLayoutPanel1.Controls.Add(this.GrpBxDuenio, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.GrpBxVehic, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.GrpBxPrecios, 1, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(7, 68);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 48.34025F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 51.65975F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(754, 482);
-            this.tableLayoutPanel1.TabIndex = 4;
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(6, 74);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(58, 13);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Repuestos";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // GrpBxPrecios
+            // label5
             // 
-            this.GrpBxPrecios.Controls.Add(this.BtnRemove);
-            this.GrpBxPrecios.Controls.Add(this.BtnAdd);
-            this.GrpBxPrecios.Controls.Add(this.listView1);
-            this.GrpBxPrecios.Location = new System.Drawing.Point(344, 3);
-            this.GrpBxPrecios.Name = "GrpBxPrecios";
-            this.GrpBxPrecios.Size = new System.Drawing.Size(401, 226);
-            this.GrpBxPrecios.TabIndex = 4;
-            this.GrpBxPrecios.TabStop = false;
-            this.GrpBxPrecios.Text = "Lista de precios";
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(6, 40);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(54, 13);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "Trabajos: ";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // listView1
+            // textBox4
             // 
-            this.listView1.HideSelection = false;
-            this.listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem1,
-            listViewItem2,
-            listViewItem3,
-            listViewItem4,
-            listViewItem5,
-            listViewItem6,
-            listViewItem7});
-            this.listView1.Location = new System.Drawing.Point(16, 36);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(152, 178);
-            this.listView1.TabIndex = 0;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.List;
+            this.textBox4.Location = new System.Drawing.Point(70, 33);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(241, 20);
+            this.textBox4.TabIndex = 0;
+            this.textBox4.Tag = "";
             // 
-            // BtnAdd
+            // textBox5
             // 
-            this.BtnAdd.Location = new System.Drawing.Point(196, 35);
-            this.BtnAdd.Name = "BtnAdd";
-            this.BtnAdd.Size = new System.Drawing.Size(46, 33);
-            this.BtnAdd.TabIndex = 1;
-            this.BtnAdd.Text = "+";
-            this.BtnAdd.UseVisualStyleBackColor = true;
+            this.textBox5.AutoCompleteCustomSource.AddRange(new string[] {
+            "264-",
+            "155-",
+            "154-"});
+            this.textBox5.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.textBox5.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.textBox5.Location = new System.Drawing.Point(66, 180);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(241, 20);
+            this.textBox5.TabIndex = 9;
             // 
-            // BtnRemove
+            // button2
             // 
-            this.BtnRemove.Location = new System.Drawing.Point(269, 35);
-            this.BtnRemove.Name = "BtnRemove";
-            this.BtnRemove.Size = new System.Drawing.Size(46, 33);
-            this.BtnRemove.TabIndex = 2;
-            this.BtnRemove.Text = "-";
-            this.BtnRemove.UseVisualStyleBackColor = true;
+            this.button2.Location = new System.Drawing.Point(319, 364);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(111, 37);
+            this.button2.TabIndex = 5;
+            this.button2.Text = "GUARDAR";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.nUEVOToolStripMenuItem,
+            this.bUSQUEDAToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(854, 24);
+            this.menuStrip1.TabIndex = 6;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // nUEVOToolStripMenuItem
+            // 
+            this.nUEVOToolStripMenuItem.Name = "nUEVOToolStripMenuItem";
+            this.nUEVOToolStripMenuItem.Size = new System.Drawing.Size(58, 20);
+            this.nUEVOToolStripMenuItem.Text = "NUEVO";
+            // 
+            // bUSQUEDAToolStripMenuItem
+            // 
+            this.bUSQUEDAToolStripMenuItem.Name = "bUSQUEDAToolStripMenuItem";
+            this.bUSQUEDAToolStripMenuItem.Size = new System.Drawing.Size(79, 20);
+            this.bUSQUEDAToolStripMenuItem.Text = "BUSQUEDA";
             // 
             // Form1
             // 
@@ -353,26 +327,28 @@ namespace AppTaller
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(854, 563);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.GrpBxDuenio);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.tableLayoutPanel1);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Taller";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.GrpBxDuenio.ResumeLayout(false);
             this.GrpBxDuenio.PerformLayout();
-            this.GrpBxVehic.ResumeLayout(false);
-            this.GrpBxVehic.PerformLayout();
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.GrpBxPrecios.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.GroupBox GrpBxDuenio;
         private System.Windows.Forms.TextBox TxtBxDNI;
         private System.Windows.Forms.Label LblDNI;
@@ -383,21 +359,21 @@ namespace AppTaller
         private System.Windows.Forms.TextBox TxtBxCelular;
         private System.Windows.Forms.Label LblCelular;
         private System.Windows.Forms.Label LblDirec;
-        private System.Windows.Forms.TextBox TxtBxDIrec;
-        private System.Windows.Forms.GroupBox GrpBxVehic;
-        private System.Windows.Forms.TextBox TxtBxPatente;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label LblProblema;
-        private System.Windows.Forms.Label LblModelo;
-        private System.Windows.Forms.Label LblMarca;
-        private System.Windows.Forms.Label LblPatente;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.GroupBox GrpBxPrecios;
-        private System.Windows.Forms.Button BtnRemove;
-        private System.Windows.Forms.Button BtnAdd;
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem nUEVOToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem bUSQUEDAToolStripMenuItem;
     }
 }
 
